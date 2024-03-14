@@ -1,0 +1,57 @@
+// Variables
+$backgroundColor: #023047;
+$buttonColor: #8ecae6;
+$calculatorColor: #219ebc;
+$buttonPadding: 10px 20px;
+$calculatorPadding: 20px;
+$buttonTransition: 0.3s ease;
+$displayFontSize: 24px;
+$buttonSpacing: 20px; 
+
+// Styles
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: $backgroundColor;
+}
+
+#calculator {
+    border: 1px solid $calculatorColor;
+    border-radius: 5px;
+    padding: $calculatorPadding;
+    box-shadow: 5px;
+}
+
+#display {
+    background-color: $backgroundColor;
+    border: 1px solid $calculatorColor;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    color: #8ecae6;
+    font-size: $displayFontSize;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: $buttonSpacing; 
+}
+
+button {
+    padding: $buttonPadding;
+    font-size: 10px;
+    border-radius: 5px; 
+    border: none;
+    cursor: pointer;
+    transition: background-color $buttonTransition;
+}
+
+button:hover {
+    background-color: $buttonColor;
+}
